@@ -1,48 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Video Demo</title>
-  <style>
-    /* 페이지 전체 여백 제거 */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background-color: black;
-    }
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Video Demo</title>
+        <style>
+            /* 페이지 전체 여백 제거 */
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden;
+                background-color: black;
+            }
 
-    /* 비디오를 전체화면으로 고정 */
-    video {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      transform: translate(-50%, -50%);
-      object-fit: cover; /* 화면 비율 유지하며 꽉 채우기 */
-      z-index: -1; /* 다른 요소보다 뒤에 표시 */
-    }
-
-    /* 필요시 위에 내용 추가용 */
-    .content {
-      position: relative;
-      z-index: 1;
-      color: white;
-      text-align: center;
-      top: 40%;
-      font-size: 2em;
-    }
-  </style>
-</head>
-<body>
-  <video autoplay muted loop playsinline>
-    <source src="loginvideo2.mp4" type="video/mp4">
-    브라우저가 video 태그를 지원하지 않습니다.
-  </video>
-</body>
+            /* 필요시 위에 내용 추가용 */
+            .content {
+                position: relative;
+                z-index: 1;
+                color: white;
+                text-align: center;
+                top: 40%;
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <video autoplay muted loop playsinline width="1256">
+            <source src="loginvideo2.mp4" type="video/mp4" />
+            브라우저가 video 태그를 지원하지 않습니다.
+        </video>
+    </body>
 </html>
