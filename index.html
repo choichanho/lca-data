@@ -15,6 +15,20 @@
                 background-color: transparent;
             }
 
+            /* 비디오를 전체화면으로 고정 */
+            video {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                transform: translate(-50%, -50%);
+                object-fit: cover; /* 화면 비율 유지하며 꽉 채우기 */
+                z-index: -1; /* 다른 요소보다 뒤에 표시 */
+            }
+
             /* 필요시 위에 내용 추가용 */
             .content {
                 position: relative;
